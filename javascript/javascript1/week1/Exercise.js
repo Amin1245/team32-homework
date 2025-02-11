@@ -32,28 +32,28 @@ const actualPricePeter = volumePeter * 2.5 * 1000 + gardenSizePeter * 300
 console.log(`Peter house Price Is ${actualPricePeter}`);
     console.log (
         actualPricePeter < peterPaid
-        ? "This house is a great deal! The owner is paying too little"
-        :"This house is too expensive!"
+      ? "Peter paid too much for the house!"
+      : "Peter got a great deal on the house!"
     );
 
 const height2 = 8;
 const width2 = 5;
 const deep2 = 11;
 const volumeJulia = deep2 * width2 * height2;
-const gardenSizeJulia=100;
+const gardenSizeJulia=70;
 const juliaPaid = 1000000;
 const actualPriceJulia = volumeJulia * 2.5 * 1000 + gardenSizeJulia * 300
 console.log(`Julia house Price Is ${actualPriceJulia}`);
 console.log (
     actualPriceJulia < juliaPaid
-    ? "This house is a great deal! The owner is paying too little"
-    :"This house is too expensive!"
+      ? "Julia paid too much for the house!"
+      : "Julia got a great deal on the house!"
 );
 
 
 //Startup Name
 
-const firstWords = [ "Easy", "Creative", "Tech", "Smart", "Future", "Digital", "Next", "Global", "Prime", "Quick",];
+const firstWords = [ "Easy", "Creative", "Tech", "Smart", "Future", "Digital", "Next", "Global", "Prime", "Quick"];
 const secondWords =["Solutions", "Innovations", "Ventures", "Systems", "Labs", "Startups", "Ideas", "Technologies", "Works", "Studios"];
 const randomNumber1 = Math.floor(Math.random() * 10);
 const randomNumber2 = Math.floor(Math.random() * 10);
