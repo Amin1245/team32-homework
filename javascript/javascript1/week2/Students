@@ -1,0 +1,32 @@
+const class07Students = [];
+function addStudentToClass(studentName) {
+    if (class07Students.includes(studentName)) {
+        console.log(` ${studentName} is already in the class!`);
+        return;
+    }
+    if (class07Students.length >= 6 && studentName !== "Queen") {
+        console.log("Cannot add more students to class 07"); 
+        return;   
+    }
+    
+    class07Students.push(studentName);
+
+}
+addStudentToClass("Amin");
+addStudentToClass("Mozhgan");
+addStudentToClass("Bardia");
+addStudentToClass("Peransa");
+addStudentToClass("Shima");
+addStudentToClass("Ahmad");
+addStudentToClass("Sharareh");
+addStudentToClass("Queen");
+
+
+console.log(class07Students);
+
+    
+function getNumberOfStudents() {
+    console.log(`There are ${class07Students.length} students in class 7`);
+  }
+
+  getNumberOfStudents();
