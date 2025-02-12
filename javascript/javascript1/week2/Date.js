@@ -8,8 +8,5 @@ return days[futureDay];
 
 
 
-// With todays weekday a tuesday
-console.log(getEventWeekday(3)); // Logs out "Thursday"
 
-// With todays weekday a Friday
-// console.log(getEventWeekday(2)); // Logs out "Sunday"
+console.log(getEventWeekday(3));

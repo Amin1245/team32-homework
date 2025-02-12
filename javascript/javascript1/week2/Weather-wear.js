@@ -5,4 +5,4 @@ function weather(t) {
          : "It's freezing! Stay HOME!";
 }
 
-    console.log(weather(1));
+    console.log(weather(12));
