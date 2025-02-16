@@ -16,3 +16,18 @@ const fullname2 = getFullname ("Bardia", "Babapour",false);
 //console.log (fullname2);
 
 console.log (getFullname("Amin","",true));
+
+
+// For female formal name, I have to add one more parameter called "isFemale = false" 
+// and update the if function like below:
+// Also, we need to modify our HTML code to add a dropdown box for selecting gender.
+ 
+
+ if (useFormalName) {
+    return isFemale 
+        ? `Lady ${firstName} ${surName}`  // If female, return "Lady"
+        : `Lord ${firstName} ${surName}`; // If male, return "Lord"
+} else {
+    return `${firstName} ${surName}`; // If formal name is not selected, return normal name
+}
+    
