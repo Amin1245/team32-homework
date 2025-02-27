@@ -26,7 +26,7 @@ const seriesDurations = [
         const series = seriesDurations[i];
         const totalMinutes = (series.days * 24 * 60) + (series.hours * 60) + series.minutes;
     const percentage = (totalMinutes / averageLifeSpanMinutes) * 100;
-    console.log(`${series.title} took  ${percentage.toFixed(3)} of my life `);
+    console.log(`${series.title} took  ${percentage.toFixed(3)}% of my life `);
 
         totalPercentage +=percentage;
             
