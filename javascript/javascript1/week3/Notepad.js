@@ -16,7 +16,7 @@ function getNote(id) {
         if (notes[i].id==id) {
             return notes[i];
         }   
-        return "Note not find!!!";
+        return "Note not found!!!";
         
     }
   }
