@@ -18,8 +18,11 @@ const seriesDurations = [
       minutes: 1,
     },
   ];
-  const averageLifeSpanMinutes = 80 * 365 * 24 * 60;
-  
+ const yearDays = 365;
+  const lifeSpan = 100;
+  const dayToHours =24;
+  const hourToMin = 60;
+  const averageLifeSpanMinutes = (yearDays * lifeSpan * dayToHours * hourToMin);
   function logOutSeriesText() {
     let totalPercentage = 0;
     for (let i = 0; i < seriesDurations.length; i++) {
