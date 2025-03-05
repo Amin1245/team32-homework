@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Recipe App</h1>
+
+    <div id="recipes"></div>
+
+    <form id="recipeForm">
+        <h2>Add a New Recipe</h2>
+        <input type="text" id="title" placeholder="Recipe Name" required>
+        <input type="text" id="picture_url" placeholder="Image URL" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        
+        <h3>Ingredients</h3>
+        <div id="ingredients">
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+    
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+    
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+    
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+    
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+        </div>
+        <button type="button" id="addIngredient">Add More Ingredients</button>
+        <button type="submit">Add Recipe</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
