@@ -11,7 +11,7 @@ const startTimerBtn = document.getElementById("startTimer");
 const timerDisplay = document.getElementById("timerDisplay");
 const pageTimerDisplay = document.getElementById("pageTimer");
 
-// Load recipes from JSON
+
 async function fetchRecipes() {
     try {
         const res = await fetch("recipes.json");
@@ -22,7 +22,6 @@ async function fetchRecipes() {
     }
 }
 
-// Render recipes
 function renderRecipes(list) {
     recipesContainer.innerHTML = "";
     list.forEach(recipe => {
@@ -55,7 +54,6 @@ function renderRecipes(list) {
     });
 }
 
-// Search by title or ingredient
 function searchRecipes() {
     const term = searchInput.value.toLowerCase();
     const result = recipes.filter(recipe =>
@@ -65,7 +63,7 @@ function searchRecipes() {
     renderRecipes(result);
 }
 
-// Sort recipes
+
 function sortRecipes(ascending = true) {
     const sorted = [...recipes].sort((a, b) => {
         const aLen = a.ingredients.length;
@@ -75,7 +73,7 @@ function sortRecipes(ascending = true) {
     renderRecipes(sorted);
 }
 
-// Add new ingredient input fields
+
 addIngredientBtn.addEventListener("click", () => {
     const nameInput = document.createElement("input");
     nameInput.type = "text";
@@ -93,7 +91,7 @@ addIngredientBtn.addEventListener("click", () => {
     ingredientsContainer.appendChild(amountInput);
 });
 
-// Handle form submission
+
 recipeForm.addEventListener("submit", event => {
     event.preventDefault();
     const title = document.getElementById("title").value;
@@ -126,7 +124,7 @@ recipeForm.addEventListener("submit", event => {
     `;
 });
 
-// Cooking countdown timer
+
 startTimerBtn.addEventListener("click", () => {
     let minutes = parseInt(timerInput.value);
     if (isNaN(minutes) || minutes <= 0) return;
@@ -151,17 +149,16 @@ function updateTimerDisplay(seconds) {
     timerDisplay.textContent = `Time left: ${min}:${sec < 10 ? "0" : ""}${sec}`;
 }
 
-// Page time tracker
+
 let timeSpent = 0;
 setInterval(() => {
     timeSpent++;
     pageTimerDisplay.textContent = `You have spent ${timeSpent} seconds on this page.`;
 }, 1000);
 
-// Event listeners
 searchButton.addEventListener("click", searchRecipes);
 
-// Event listener for sort select
+
 sortSelect.addEventListener("change", (event) => {
     const sortType = event.target.value;
     if (sortType === "asc") {
@@ -171,10 +168,10 @@ sortSelect.addEventListener("change", (event) => {
     }
 });
 
-// Event listener for "Add Recipe" button
+
 document.getElementById("addRecipeBtn").addEventListener("click", () => {
     document.getElementById("recipeForm").scrollIntoView({ behavior: "smooth" });
 });
 
-// Initialize
+
 fetchRecipes();
