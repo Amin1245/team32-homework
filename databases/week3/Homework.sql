@@ -136,6 +136,6 @@ ORDER BY created_date;
 -- Sort all meals by average number of stars in the reviews
 SELECT m.*, AVG(r.stars) AS average_rating
 FROM meal m
-JOIN review r ON m.id = r.meal_id
+JOIN review r ON m.id = r.meal_id 
 GROUP BY m.id
 ORDER BY average_rating DESC;

@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS friendships (
     user2_id INT NOT NULL,
     created_at DATETIME NOT NULL,
     FOREIGN KEY (user1_id) REFERENCES users(id),
-    FOREIGN KEY (user2_id) REFERENCES users(id)
+    FOREIGN KEY (user2_id) REFERENCES users(id) 
 );
 
 
