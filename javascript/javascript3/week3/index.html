@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+            <input type="text" id="searchInput" placeholder="Search by title or ingredient...">
+            <button id="searchButton">Search</button>
+            <label for="sortSelect">Sort By:</label>
+            <select id="sortSelect">
+                <option value="">Sort By</option>
+                <option value="asc">Sort by Ingredients (Low to High)</option>
+                <option value="desc">Sort by Ingredients (High to Low)</option>
+            </select>
+            <button id="addRecipeBtn">Add Recipe</button>
+        </nav>
+        <div id="pageTimer">You have spent 0 seconds on this page.</div>
+    </header>
+
+    <section id="recipes"></section>
+
+    <form id="recipeForm">
+        <h2>Add a New Recipe</h2>
+        <label for="title">Recipe Name:</label>
+        <input type="text" id="title" placeholder="Recipe Name" required>
+
+        <label for="picture_url">Image URL:</label>
+        <input type="text" id="picture_url" placeholder="Image URL" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Description" required></textarea>
+
+        <h3>Ingredients</h3>
+        <div id="ingredients">
+            <input type="text" class="ingredient-name" placeholder="Ingredient Name" required>
+            <input type="text" class="ingredient-amount" placeholder="Amount" required>
+        </div>
+        <button type="button" id="addIngredient">Add More Ingredients</button>
+        <button type="submit">Add Recipe</button>
+    </form>
+
+    <section>
+        <h2>Cooking Timer</h2>
+        <input type="number" id="timerInput" placeholder="Enter minutes">
+        <button id="startTimer">Start Timer</button>
+        <p id="timerDisplay"></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 All rights reserved by Amin Babapour</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
