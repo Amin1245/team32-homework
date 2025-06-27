@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Node.js Intro",
+    "content": "Node.js is a JavaScript runtime built on Chrome's V8 engine."
+  },
+  {
+    "id": 2,
+    "title": "Knex and SQL",
+    "content": "Knex is a query builder for SQL databases."
+  }
+]
