@@ -5,3 +5,6 @@ Onion
 Spinach
 Lettuce
 Garlic
+Cauliflower
+Onion
+Spinach
