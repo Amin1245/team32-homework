@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Gløgg",
+    "picture_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Gl%C3%B6gg_kastrull.JPG/800px-Gl%C3%B6gg_kastrull.JPG",
+    "description": "Mix everything, heat it, and you are good to go!",
+    "ingredients": [
+      { "name": "Orange zest", "amount": "0.5", "price": 3 },
+      { "name": "Water", "amount": "200 ml", "price": 1 },
+      { "name": "Sugar", "amount": "275 g", "price": 5 },
+      { "name": "Whole cloves", "amount": "5", "price": 2 },
+      { "name": "Cinnamon sticks", "amount": "2", "price": 4 },
+      { "name": "Spice", "amount": "1 g", "price": 3 },
+      { "name": "Bottle of red wine", "amount": "1", "price": 20 },
+      { "name": "Raisins", "amount": "100 g", "price": 6 },
+      { "name": "Slipped Almonds", "amount": "50 g", "price": 8 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ghorme Sabzi",
+    "picture_url": "https://as2.ftcdn.net/v2/jpg/09/98/14/69/1000_F_998146935_Pv9JskdcvMLKlypc4JPDlnV33Ys0SnCP.jpg",
+    "description": "A traditional Persian herb stew.",
+    "ingredients": [
+      { "name": "Meat", "amount": "250 gr", "price": 35 },
+      { "name": "Water", "amount": "200 ml", "price": 1 },
+      { "name": "Parsley", "amount": "250 g", "price": 4 },
+      { "name": "Fenugreek", "amount": "250 g", "price": 3 },
+      { "name": "Green onions", "amount": "220 g", "price": 5 },
+      { "name": "Pepper", "amount": "10 g", "price": 1 },
+      { "name": "Dried Lime", "amount": "2 pcs", "price": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Fesenjan",
+    "picture_url": "https://cookingwithzahra.com/wp-content/uploads/2023/12/faseenjoon-chicken-3-1152x2048.jpg",
+    "description": "A rich Persian stew made with walnuts and pomegranate.",
+    "ingredients": [
+      { "name": "Chicken", "amount": "500 gr", "price": 30 },
+      { "name": "Water", "amount": "5 Cup", "price": 1 },
+      { "name": "Ground Saffron", "amount": "1 g", "price": 10 },
+      { "name": "Cardamom Powder", "amount": "250 g", "price": 15 },
+      { "name": "Finely Ground Walnuts", "amount": "400 g", "price": 20 },
+      { "name": "Vegetable Oil", "amount": "1/4 Cup", "price": 5 },
+      { "name": "Black Pepper", "amount": "10 g", "price": 2 },
+      { "name": "Rose Water", "amount": "20 ml", "price": 3 },
+      { "name": "Salt", "amount": "2 tbsp", "price": 1 }
+    ]
+  }
+]
+ 
